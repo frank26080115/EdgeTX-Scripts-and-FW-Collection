@@ -58,7 +58,7 @@ local function run(event, touchState)
   end
 
   lcd.clear()
-  lcd.drawText(0, 0, "Choose Flight Mode")
+  lcd.drawText(2, 2, "Choose Flight Mode")
   local line_spacing = 8
   local y_start = 16
   local y = y_start
