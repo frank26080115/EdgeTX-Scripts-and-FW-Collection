@@ -1,5 +1,7 @@
 -- this script is a screen that implements a few more switches or dials virtually
+-- it's meant to enhance smaller transmitters with less switches available
 -- place this script in SCRIPTS/TOOLS on the microSD card, so it can be run from the SYS button
+-- place this script in SCRIPTS/TELEMETRY on the microSD card, if you want to access it as a telemetry screen
 -- for different configs for different models, use a different name for the .lua file
 -- warning: this will override the last few inputs, using I32 and going backwards
 
@@ -285,4 +287,8 @@ local function run(event, touchState)
   return 0
 end
 
-return { run=run, init=init }
+local function background()
+  -- empty function required for this screen to work as a telemetry screen
+end
+
+return { run=run, init=init, background=background }
