@@ -1,0 +1,744 @@
+semver: 2.10.0
+header: 
+   name: "MODEL01"
+telemetryProtocol: 0
+thrTrim: 0
+noGlobalFunctions: 0
+displayTrims: 2
+ignoreSensorIds: 0
+trimInc: 0
+disableThrottleWarning: 1
+displayChecklist: 0
+extendedLimits: 0
+extendedTrims: 0
+throttleReversed: 0
+enableCustomThrottleWarning: 0
+disableTelemetryWarning: 0
+showInstanceIds: 0
+checklistInteractive: 0
+hatsMode: TRIMS_ONLY
+customThrottleWarningPosition: 0
+beepANACenter: 0
+mixData: 
+ -
+   weight: 100
+   destCh: 0
+   srcRaw: ch(30)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Drv-L"
+ -
+   weight: 100
+   destCh: 0
+   srcRaw: ch(31)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Mix"
+ -
+   weight: 100
+   destCh: 0
+   srcRaw: ch(28)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Bias"
+ -
+   weight: 100
+   destCh: 0
+   srcRaw: ch(26)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Speed"
+ -
+   weight: 100
+   destCh: 0
+   srcRaw: MAX
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 28
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "A-DZ"
+ -
+   weight: -200
+   destCh: 0
+   srcRaw: ls(60)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Revers"
+ -
+   weight: -200
+   destCh: 0
+   srcRaw: ls(58)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Flip"
+ -
+   weight: 100
+   destCh: 1
+   srcRaw: ch(30)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Drv-R"
+ -
+   weight: -100
+   destCh: 1
+   srcRaw: ch(31)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Mix"
+ -
+   weight: 100
+   destCh: 1
+   srcRaw: ch(29)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Bias"
+ -
+   weight: 100
+   destCh: 1
+   srcRaw: ch(26)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Speed"
+ -
+   weight: 100
+   destCh: 1
+   srcRaw: MAX
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 28
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "A-DZ"
+ -
+   weight: -200
+   destCh: 1
+   srcRaw: ls(59)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Revers"
+ -
+   weight: -200
+   destCh: 1
+   srcRaw: ls(58)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Flip"
+ -
+   weight: 100
+   destCh: 2
+   srcRaw: ch(19)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 20
+   speedDown: 0
+   name: "WEAP"
+ -
+   weight: 100
+   destCh: 19
+   srcRaw: P1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   offset: -200
+   swtch: "L57"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "WEAP"
+ -
+   weight: 100
+   destCh: 19
+   srcRaw: P1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "!L57"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 25
+   srcRaw: TrimThr
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 30
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "DrvSpd"
+ -
+   weight: 100
+   destCh: 26
+   srcRaw: TrimEle
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 30
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "MotSpd"
+ -
+   weight: 100
+   destCh: 27
+   srcRaw: TrimRud
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 30
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "StrBia"
+ -
+   weight: 100
+   destCh: 28
+   srcRaw: TrimAil
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 30
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "BalBia"
+ -
+   weight: 100
+   destCh: 29
+   srcRaw: TrimAil
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 29
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "BalBia"
+ -
+   weight: 100
+   destCh: 30
+   srcRaw: Thr
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "L61"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 32
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Thrott"
+ -
+   weight: 100
+   destCh: 30
+   srcRaw: Ele
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "!L61"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 32
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Select"
+ -
+   weight: 100
+   destCh: 30
+   srcRaw: ch(25)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "DrvSpd"
+ -
+   weight: 100
+   destCh: 30
+   srcRaw: MAX
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   curve: 
+      type: 1
+      value: 25
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Expo"
+ -
+   weight: 100
+   destCh: 31
+   srcRaw: Rud
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "L62"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 32
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Steer"
+ -
+   weight: 100
+   destCh: 31
+   srcRaw: Ail
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "!L62"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 32
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Select"
+ -
+   weight: 100
+   destCh: 31
+   srcRaw: ch(27)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "StRate"
+ -
+   weight: 100
+   destCh: 31
+   srcRaw: MAX
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   curve: 
+      type: 1
+      value: 25
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Expo"
+ -
+   weight: -100
+   destCh: 31
+   srcRaw: ls(58)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Flip"
+limitData: 
+   0:
+      min: 0
+      max: 0
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: "DrvL"
+   1:
+      min: 0
+      max: 0
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: "DrvR"
+   2:
+      min: 0
+      max: 0
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: "Weap"
+curves: 
+   27:
+      type: 1
+      smooth: 0
+      points: 0
+      name: "ADZ"
+   28:
+      type: 1
+      smooth: 0
+      points: -3
+      name: "P10"
+   29:
+      type: 1
+      smooth: 0
+      points: -3
+      name: "P01"
+   30:
+      type: 0
+      smooth: 1
+      points: 12
+      name: "EXP"
+   31:
+      type: 1
+      smooth: 0
+      points: 0
+      name: "CDZ"
+points: 
+   135:
+      val: -100
+   136:
+      val: -5
+   138:
+      val: 5
+   139:
+      val: 100
+   143:
+      val: 100
+   146:
+      val: 100
+   147:
+      val: -100
+   148:
+      val: -77
+   149:
+      val: -59
+   150:
+      val: -44
+   151:
+      val: -31
+   152:
+      val: -21
+   153:
+      val: -13
+   154:
+      val: -6
+   156:
+      val: 6
+   157:
+      val: 13
+   158:
+      val: 21
+   159:
+      val: 31
+   160:
+      val: 44
+   161:
+      val: 59
+   162:
+      val: 77
+   163:
+      val: 100
+   164:
+      val: -100
+   168:
+      val: 100
+   169:
+      val: -5
+   171:
+      val: 5
+logicalSw: 
+   56:
+      func: FUNC_EQUAL
+      def: "SF,MIN"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   57:
+      func: FUNC_EQUAL
+      def: "SE,MAX"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   58:
+      func: FUNC_EQUAL
+      def: "SC,MAX"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   59:
+      func: FUNC_EQUAL
+      def: "SB,MAX"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   60:
+      func: FUNC_EQUAL
+      def: "NONE,MIN"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   61:
+      func: FUNC_EQUAL
+      def: "NONE,MIN"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+flightModeData: 
+   0:
+      trim: 
+         0:
+            value: 128
+            mode: 0
+         2:
+            value: 128
+            mode: 0
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+thrTraceSrc: Thr
+switchWarningState: EuFu
+rssiSource: none
+rfAlarms: 
+   warning: 45
+   critical: 42
+thrTrimSw: 0
+potsWarnMode: WARN_OFF
+jitterFilter: GLOBAL
+moduleData: 
+   0:
+      type: TYPE_CROSSFIRE
+      subType: 0
+      channelsStart: 0
+      channelsCount: 16
+      failsafeMode: NOT_SET
+      mod: 
+         crsf: 
+            telemetryBaudrate: 0
+trainerData: 
+   mode: OFF
+   channelsStart: 0
+   channelsCount: -8
+   frameLength: 0
+   delay: 0
+   pulsePol: 0
+potsWarnEnabled: 0
+view: 0
+modelRegistrationID: " 87SR0P-"
+usbJoystickExtMode: 0
+usbJoystickIfMode: JOYSTICK
+usbJoystickCircularCut: 0
+radioGFDisabled: GLOBAL
+radioTrainerDisabled: GLOBAL
+modelHeliDisabled: GLOBAL
+modelFMDisabled: GLOBAL
+modelCurvesDisabled: GLOBAL
+modelGVDisabled: GLOBAL
+modelLSDisabled: GLOBAL
+modelSFDisabled: GLOBAL
+modelCustomScriptsDisabled: GLOBAL
+modelTelemetryDisabled: GLOBAL
