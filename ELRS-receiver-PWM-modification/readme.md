@@ -47,3 +47,7 @@ Once connected to the Wi-Fi access point, open up a browser and use it to naviga
 ![](elrsrxprep_hwfileupload.jpg)
 
 After that, configure the receiver however you like, such as setting the binding phrase. Please pay special attention to the failsafe configuration for safety reasons.
+
+If you need some super short connectors to connect to this super small receiver, [please consider this technique](../Make-Short-Dupont-Plug-Connectors/readme.md).
+
+![](../Make-Short-Dupont-Plug-Connectors/shortplug_final.jpg)
