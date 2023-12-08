@@ -323,7 +323,7 @@ mixData:
  -
    weight: 100
    destCh: 27
-   srcRaw: T2
+   srcRaw: TrimEle
    carryTrim: 1
    mixWarn: 0
    mltpx: ADD
@@ -341,7 +341,7 @@ mixData:
  -
    weight: 100
    destCh: 28
-   srcRaw: T1
+   srcRaw: TrimRud
    carryTrim: 1
    mixWarn: 0
    mltpx: ADD
@@ -359,7 +359,7 @@ mixData:
  -
    weight: 100
    destCh: 29
-   srcRaw: T1
+   srcRaw: TrimRud
    carryTrim: 1
    mixWarn: 0
    mltpx: ADD
@@ -598,12 +598,21 @@ points:
       val: -5
    171:
       val: 5
+logicalSw: 
+   58:
+      func: FUNC_VPOS
+      def: "gv(0),0"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   59:
+      func: FUNC_VPOS
+      def: "gv(1),0"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
 flightModeData: 
    0:
-      trim: 
-         3:
-            value: 44
-            mode: 0
       name: ""
       swtch: "NONE"
       fadeIn: 0
@@ -636,16 +645,6 @@ rfAlarms:
 thrTrimSw: 0
 potsWarnMode: WARN_OFF
 jitterFilter: GLOBAL
-moduleData: 
-   0:
-      type: TYPE_CROSSFIRE
-      subType: 0
-      channelsStart: 0
-      channelsCount: 16
-      failsafeMode: NOT_SET
-      mod: 
-         crsf: 
-            telemetryBaudrate: 0
 trainerData: 
    mode: OFF
    channelsStart: 0
