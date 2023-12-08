@@ -634,7 +634,7 @@ points:
       val: -5
    171:
       val: 5
-logicalSw: 
+logicalSw:
    56:
       func: FUNC_EQUAL
       def: "SD,MAX"
@@ -648,14 +648,14 @@ logicalSw:
       delay: 0
       duration: 0
    58:
-      func: FUNC_EQUAL
-      def: "SC,MAX"
+      func: FUNC_VPOS
+      def: "gv(0),0"
       andsw: "NONE"
       delay: 0
       duration: 0
    59:
-      func: FUNC_EQUAL
-      def: "SB,MAX"
+      func: FUNC_VPOS
+      def: "gv(1),0"
       andsw: "NONE"
       delay: 0
       duration: 0
