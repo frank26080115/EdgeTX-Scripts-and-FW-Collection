@@ -1,6 +1,9 @@
 semver: 2.10.0
 header: 
    name: "MODEL00"
+   modelId: 
+      1:
+         val: 1
 telemetryProtocol: 0
 thrTrim: 0
 noGlobalFunctions: 0
@@ -259,7 +262,7 @@ mixData:
    mixWarn: 0
    mltpx: REPL
    offset: -200
-   swtch: "L57"
+   swtch: "!L57"
    flightModes: 000000000
    delayUp: 0
    delayDown: 0
@@ -274,7 +277,7 @@ mixData:
    mixWarn: 0
    mltpx: REPL
    offset: 0
-   swtch: "!L57"
+   swtch: "L57"
    flightModes: 000000000
    delayUp: 0
    delayDown: 0
@@ -284,7 +287,7 @@ mixData:
  -
    weight: 100
    destCh: 25
-   srcRaw: TrimThr
+   srcRaw: TrimAil
    carryTrim: 1
    mixWarn: 0
    mltpx: REPL
@@ -302,7 +305,7 @@ mixData:
  -
    weight: 100
    destCh: 26
-   srcRaw: TrimEle
+   srcRaw: TrimThr
    carryTrim: 1
    mixWarn: 0
    mltpx: ADD
@@ -320,7 +323,7 @@ mixData:
  -
    weight: 100
    destCh: 27
-   srcRaw: TrimRud
+   srcRaw: T2
    carryTrim: 1
    mixWarn: 0
    mltpx: ADD
@@ -338,7 +341,7 @@ mixData:
  -
    weight: 100
    destCh: 28
-   srcRaw: TrimAil
+   srcRaw: T1
    carryTrim: 1
    mixWarn: 0
    mltpx: ADD
@@ -356,7 +359,7 @@ mixData:
  -
    weight: 100
    destCh: 29
-   srcRaw: TrimAil
+   srcRaw: T1
    carryTrim: 1
    mixWarn: 0
    mltpx: ADD
@@ -374,12 +377,12 @@ mixData:
  -
    weight: 100
    destCh: 30
-   srcRaw: Thr
+   srcRaw: TH
    carryTrim: 1
    mixWarn: 0
    mltpx: REPL
    offset: 0
-   swtch: "L61"
+   swtch: "NONE"
    flightModes: 000000000
    curve: 
       type: 3
@@ -389,24 +392,6 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: "Thrott"
- -
-   weight: 100
-   destCh: 30
-   srcRaw: Ele
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: REPL
-   offset: 0
-   swtch: "!L61"
-   flightModes: 000000000
-   curve: 
-      type: 3
-      value: 32
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Select"
  -
    weight: 100
    destCh: 30
@@ -443,12 +428,12 @@ mixData:
  -
    weight: 100
    destCh: 31
-   srcRaw: Rud
+   srcRaw: ST
    carryTrim: 1
    mixWarn: 0
    mltpx: REPL
    offset: 0
-   swtch: "L62"
+   swtch: "NONE"
    flightModes: 000000000
    curve: 
       type: 3
@@ -458,24 +443,6 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: "Steer"
- -
-   weight: 100
-   destCh: 31
-   srcRaw: Ail
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: REPL
-   offset: 0
-   swtch: "!L62"
-   flightModes: 000000000
-   curve: 
-      type: 3
-      value: 32
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Select"
  -
    weight: 100
    destCh: 31
@@ -526,7 +493,7 @@ mixData:
    name: "Flip"
 limitData: 
    0:
-      min: 0
+      min: 2
       max: 0
       ppmCenter: 0
       offset: 0
@@ -535,7 +502,7 @@ limitData:
       curve: 0
       name: "DrvL"
    1:
-      min: 0
+      min: 3
       max: 0
       ppmCenter: 0
       offset: 0
@@ -544,7 +511,7 @@ limitData:
       curve: 0
       name: "DrvR"
    2:
-      min: 0
+      min: 3
       max: 0
       ppmCenter: 0
       offset: 0
@@ -631,51 +598,11 @@ points:
       val: -5
    171:
       val: 5
-logicalSw: 
-   56:
-      func: FUNC_EQUAL
-      def: "SF,MIN"
-      andsw: "NONE"
-      delay: 0
-      duration: 0
-   57:
-      func: FUNC_EQUAL
-      def: "SE,MAX"
-      andsw: "NONE"
-      delay: 0
-      duration: 0
-   58:
-      func: FUNC_EQUAL
-      def: "SC,MAX"
-      andsw: "NONE"
-      delay: 0
-      duration: 0
-   59:
-      func: FUNC_EQUAL
-      def: "SB,MAX"
-      andsw: "NONE"
-      delay: 0
-      duration: 0
-   60:
-      func: FUNC_EQUAL
-      def: "NONE,MIN"
-      andsw: "NONE"
-      delay: 0
-      duration: 0
-   61:
-      func: FUNC_EQUAL
-      def: "NONE,MIN"
-      andsw: "NONE"
-      delay: 0
-      duration: 0
 flightModeData: 
    0:
       trim: 
-         0:
-            value: 128
-            mode: 0
-         2:
-            value: 128
+         3:
+            value: 44
             mode: 0
       name: ""
       swtch: "NONE"
@@ -700,8 +627,8 @@ flightModeData:
             val: 0
          8:
             val: 0
-thrTraceSrc: Thr
-switchWarningState: EuFu
+thrTraceSrc: TH
+switchWarningState: 
 rssiSource: none
 rfAlarms: 
    warning: 45
@@ -728,7 +655,7 @@ trainerData:
    pulsePol: 0
 potsWarnEnabled: 0
 view: 0
-modelRegistrationID: " 87SR0P-"
+modelRegistrationID: ""
 usbJoystickExtMode: 0
 usbJoystickIfMode: JOYSTICK
 usbJoystickCircularCut: 0
@@ -740,5 +667,5 @@ modelCurvesDisabled: GLOBAL
 modelGVDisabled: GLOBAL
 modelLSDisabled: GLOBAL
 modelSFDisabled: GLOBAL
-modelCustomScriptsDisabled: GLOBAL
+modelCustomScriptsDisabled: ON
 modelTelemetryDisabled: GLOBAL
