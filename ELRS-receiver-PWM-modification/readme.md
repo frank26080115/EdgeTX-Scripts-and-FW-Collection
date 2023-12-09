@@ -42,9 +42,19 @@ Once the receiver is powered ON, wait for 60 seconds until the Wi-Fi interface s
 
 ![](elrsrxprep_connectwifi.jpg)
 
+# Pin Config Method 1
+
+Once connected to the Wi-Fi access point, open up a browser and use it to navigate to `http://10.0.0.1/hardware.html`. From there, upload this custom JSON file I [provided for you here](pwm3.json).
+
+![](elrsrxprep_hwfileupload.jpg)
+
+# Pin Config Method 2
+
 Once connected to the Wi-Fi access point, open up a browser and use it to navigate to `http://10.0.0.1/`. From there, use the firmware update tab to upload this custom firmware file I [provided for you here](elrs-betafpv-lite-fw3.3.1-pwm-wifi.bin).
 
 ![](elrsrxprep_fwupdate.png)
+
+# Verify Pin Config
 
 Use the `MODEL` tab of the configuration page to ensure that the PWM pins are correctly configured:
 
@@ -55,6 +65,8 @@ The key items to check: 50 Hz mode for all channels, the input channels are in t
 If you are not using my custom firmware, then no-pulse mode is not available, and you should set your own proper failsafe pulse values.
 
 After that, configure the receiver however you like, such as setting the binding phrase.
+
+# You are Finished!
 
 Here it is compared against other small receivers:
 
@@ -72,10 +84,8 @@ The custom firmware I have provided is a special build.
  * failsafe can be configured for no-pulse mode
    * set the failsafe value to 0 for no-pulse
  * base version is 3.3.1
-   * if you are using a future transmitter firmware that is not compatible, contact me by the github issues submission system
+   * if you are using a future transmitter firmware that is not compatible, then use the JSON file method
 
 If you are not using my custom firmware, then no-pulse mode is not available, and you should set your own proper failsafe pulse values.
-
-Just to mention, there should have been a way to use `http://10.0.0.1/hardware.html` to configure the PWM pins, but for some reason, this method has not been successful.
 
 If you want a copy of the firmware that can be loaded by UART, [use this file](elrs-betafpv-lite-fw3.3.1-pwm-wifi.bin)
