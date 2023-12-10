@@ -8,6 +8,8 @@ I made a modified firmware for the MT12 to turn trim #4 into **switch-E**. Pleas
 
 This firmware is based on EdgeTX version 2.10.0, which is the same version that the MT12 shipped with. The code changes I made is minimal, please see the [diff file here](diff.txt).
 
+The switch will probably not immediately show up, you need to go into `SYS`, then use the `PAGE` button to navigate to the `HARDWARE` menu, then scroll down and set `SE` to be `3POS`.
+
 NOTE: I advise that you map this switch also to a logical switch if you need to use the EdgeTX Companion App, as the companion app is not aware of this kind of customization.
 
 NOTE: T5 is now T4
