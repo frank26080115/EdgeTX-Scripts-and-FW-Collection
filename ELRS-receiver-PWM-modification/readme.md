@@ -42,13 +42,13 @@ Once the receiver is powered ON, wait for 60 seconds until the Wi-Fi interface s
 
 ![](elrsrxprep_connectwifi.jpg)
 
-# Pin Config Method 1
+# Pin Config Method 1 (hardware config JSON)
 
 Once connected to the Wi-Fi access point, open up a browser and use it to navigate to `http://10.0.0.1/hardware.html`. From there, upload this custom JSON file I [provided for you here](pwm3.json).
 
 ![](elrsrxprep_hwfileupload.jpg)
 
-# Pin Config Method 2
+# Pin Config Method 2 (firmware install)
 
 Once connected to the Wi-Fi access point, open up a browser and use it to navigate to `http://10.0.0.1/`. From there, use the firmware update tab to upload this custom firmware file I [provided for you here](elrs-betafpv-lite-fw3.3.1-pwm-wifi.bin).
 
@@ -72,9 +72,11 @@ Here it is compared against other small receivers:
 
 ![](elrsrxprep_sizecompare.jpg)
 
-If you need some super short connectors to connect to this super small receiver, [please consider this technique](../Make-Short-Dupont-Plug-Connectors/readme.md).
+If you need some super short connectors to connect to this super small receiver, [please consider this technique for making small connectors](../Make-Short-Dupont-Plug-Connectors/readme.md).
 
 ![](../Make-Short-Dupont-Plug-Connectors/shortplug_final.jpg)
+
+And I have written a [short guide (click here)](use-with-combat-robots.md) catering to beginner combat robot hobbyists about how to connect to this receiver.
 
 # Custom Firmware Notes
 
