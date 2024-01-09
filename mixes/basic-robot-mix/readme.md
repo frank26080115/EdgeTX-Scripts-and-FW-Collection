@@ -6,6 +6,8 @@ To change between using the left stick and right stick, edit the sources in the 
 
 If you've wired a drive motor backwards, edit the channel direction from the `outputs` menu, select which side and edit the `direction` setting to be `INV`.
 
+Channel 31 and 32 has an `EXPO` curve item set, it's default to 25%. Edit these two curves to fit your needs, 0% means linear.
+
 There are a few logical switches being used by this mix:
 
  * L57 is the weapon off switch (true = weapon off)
@@ -14,7 +16,7 @@ There are a few logical switches being used by this mix:
 
 The logical switches should be mapped to either phyiscal switches, or be set to a position, using the logical switch panel. (this will make these files more compatible with more radios)
 
-To pick a switch position, set the logical switch to use either `a=b` (true if max) or `a<b` (false if max), with the first parameter being the switch source, and the second parameter being `MAX`.
+To pick a switch position, set the logical switch to use either `a=b` (true if max) or `a<b` (false if max), with the first parameter being the switch source, and the second parameter being `MAX`. Remember to also set the pre-flight check options for the weapon switch.
 
 The trim switches are used for real-time adjustments:
 
