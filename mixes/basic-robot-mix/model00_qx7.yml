@@ -1,6 +1,6 @@
-semver: 2.10.0
+semver: 2.9.1
 header: 
-   name: "RoMix Zo"
+   name: "RoMix QX7"
 telemetryProtocol: 0
 thrTrim: 0
 noGlobalFunctions: 0
@@ -15,8 +15,6 @@ throttleReversed: 0
 enableCustomThrottleWarning: 0
 disableTelemetryWarning: 0
 showInstanceIds: 0
-checklistInteractive: 0
-hatsMode: TRIMS_ONLY
 customThrottleWarningPosition: 0
 beepANACenter: 0
 mixData: 
@@ -534,7 +532,7 @@ expoData:
    mode: 3
    scale: 0
    trimSource: 0
-   srcRaw: P1
+   srcRaw: POT1
    chn: 2
    swtch: "NONE"
    flightModes: 000000000
@@ -671,14 +669,14 @@ logicalSw:
       delay: 0
       duration: 0
    56:
-      func: FUNC_LESS
-      def: "SE,MAX"
+      func: FUNC_EQUAL
+      def: "NONE,MAX"
       andsw: "NONE"
       delay: 0
       duration: 0
    57:
       func: FUNC_EQUAL
-      def: "SF,MAX"
+      def: "NONE,MAX"
       andsw: "NONE"
       delay: 0
       duration: 0
@@ -715,7 +713,7 @@ flightModeData:
          8:
             val: 0
 thrTraceSrc: Thr
-switchWarningState: EuFu
+switchWarningState: 
 rssiSource: none
 rfAlarms: 
    warning: 45

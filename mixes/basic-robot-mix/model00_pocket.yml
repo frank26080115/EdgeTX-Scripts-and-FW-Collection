@@ -1,9 +1,6 @@
 semver: 2.10.0
 header: 
-   name: "MODEL00"
-   modelId: 
-      1:
-         val: 1
+   name: "RoMix Pocket"
 telemetryProtocol: 0
 thrTrim: 0
 noGlobalFunctions: 0
@@ -26,70 +23,10 @@ mixData:
  -
    weight: 100
    destCh: 0
-   srcRaw: ch(30)
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: REPL
-   offset: 0
-   swtch: "NONE"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Drv-L"
- -
-   weight: 100
-   destCh: 0
-   srcRaw: ch(31)
+   srcRaw: ch(23)
    carryTrim: 1
    mixWarn: 0
    mltpx: ADD
-   offset: 0
-   swtch: "NONE"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Mix"
- -
-   weight: 100
-   destCh: 0
-   srcRaw: ch(28)
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: MUL
-   offset: 0
-   swtch: "NONE"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Bias"
- -
-   weight: 100
-   destCh: 0
-   srcRaw: ch(26)
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: MUL
-   offset: 0
-   swtch: "NONE"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Speed"
- -
-   weight: 100
-   destCh: 0
-   srcRaw: MAX
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: MUL
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -100,104 +37,14 @@ mixData:
    delayDown: 0
    speedUp: 0
    speedDown: 0
-   name: "A-DZ"
- -
-   weight: -200
-   destCh: 0
-   srcRaw: ls(60)
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: MUL
-   offset: 0
-   swtch: "NONE"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Revers"
- -
-   weight: -200
-   destCh: 0
-   srcRaw: ls(58)
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: MUL
-   offset: 0
-   swtch: "NONE"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Flip"
+   name: "LAdz"
  -
    weight: 100
    destCh: 1
-   srcRaw: ch(30)
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: REPL
-   offset: 0
-   swtch: "NONE"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Drv-R"
- -
-   weight: -100
-   destCh: 1
-   srcRaw: ch(31)
+   srcRaw: ch(24)
    carryTrim: 1
    mixWarn: 0
    mltpx: ADD
-   offset: 0
-   swtch: "NONE"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Mix"
- -
-   weight: 100
-   destCh: 1
-   srcRaw: ch(29)
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: MUL
-   offset: 0
-   swtch: "NONE"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Bias"
- -
-   weight: 100
-   destCh: 1
-   srcRaw: ch(26)
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: MUL
-   offset: 0
-   swtch: "NONE"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Speed"
- -
-   weight: 100
-   destCh: 1
-   srcRaw: MAX
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: MUL
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -208,37 +55,7 @@ mixData:
    delayDown: 0
    speedUp: 0
    speedDown: 0
-   name: "A-DZ"
- -
-   weight: -200
-   destCh: 1
-   srcRaw: ls(59)
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: MUL
-   offset: 0
-   swtch: "NONE"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Revers"
- -
-   weight: -200
-   destCh: 1
-   srcRaw: ls(58)
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: MUL
-   offset: 0
-   swtch: "NONE"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Flip"
+   name: "RAdz"
  -
    weight: 100
    destCh: 2
@@ -257,13 +74,16 @@ mixData:
  -
    weight: 100
    destCh: 19
-   srcRaw: P1
-   carryTrim: 0
+   srcRaw: I2
+   carryTrim: 1
    mixWarn: 0
-   mltpx: REPL
-   offset: -200
-   swtch: "!L57"
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
    flightModes: 000000000
+   curve: 
+      type: 3
+      value: 26
    delayUp: 0
    delayDown: 0
    speedUp: 0
@@ -272,11 +92,29 @@ mixData:
  -
    weight: 100
    destCh: 19
-   srcRaw: P1
-   carryTrim: 0
+   srcRaw: I1
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "L56"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 27
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "WepSlo"
+ -
+   weight: 0
+   destCh: 19
+   srcRaw: MAX
+   carryTrim: 1
    mixWarn: 0
    mltpx: REPL
-   offset: 0
+   offset: -100
    swtch: "L57"
    flightModes: 000000000
    delayUp: 0
@@ -284,6 +122,156 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: ""
+ -
+   weight: 100
+   destCh: 23
+   srcRaw: ch(30)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Drv-L"
+ -
+   weight: 100
+   destCh: 23
+   srcRaw: ch(31)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Mix"
+ -
+   weight: 100
+   destCh: 23
+   srcRaw: ch(28)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Bias"
+ -
+   weight: 100
+   destCh: 23
+   srcRaw: ch(26)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Speed"
+ -
+   weight: -400
+   destCh: 23
+   srcRaw: ls(58)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Flip"
+ -
+   weight: 100
+   destCh: 24
+   srcRaw: ch(30)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Drv-R"
+ -
+   weight: -100
+   destCh: 24
+   srcRaw: ch(31)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Mix"
+ -
+   weight: 100
+   destCh: 24
+   srcRaw: ch(29)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Bias"
+ -
+   weight: 100
+   destCh: 24
+   srcRaw: ch(26)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Speed"
+ -
+   weight: -400
+   destCh: 24
+   srcRaw: ls(58)
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Flip"
  -
    weight: 100
    destCh: 25
@@ -377,12 +365,12 @@ mixData:
  -
    weight: 100
    destCh: 30
-   srcRaw: Thr
+   srcRaw: I0
    carryTrim: 1
    mixWarn: 0
    mltpx: REPL
    offset: 0
-   swtch: "L61"
+   swtch: "NONE"
    flightModes: 000000000
    curve: 
       type: 3
@@ -392,24 +380,6 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: "Thrott"
- -
-   weight: 100
-   destCh: 30
-   srcRaw: Ele
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: REPL
-   offset: 0
-   swtch: "!L61"
-   flightModes: 000000000
-   curve: 
-      type: 3
-      value: 32
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Select"
  -
    weight: 100
    destCh: 30
@@ -428,7 +398,7 @@ mixData:
  -
    weight: 100
    destCh: 30
-   srcRaw: MAX
+   srcRaw: I0
    carryTrim: 1
    mixWarn: 0
    mltpx: MUL
@@ -446,12 +416,12 @@ mixData:
  -
    weight: 100
    destCh: 31
-   srcRaw: Rud
+   srcRaw: I1
    carryTrim: 1
    mixWarn: 0
    mltpx: REPL
    offset: 0
-   swtch: "L62"
+   swtch: "NONE"
    flightModes: 000000000
    curve: 
       type: 3
@@ -461,24 +431,6 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: "Steer"
- -
-   weight: 100
-   destCh: 31
-   srcRaw: Ail
-   carryTrim: 1
-   mixWarn: 0
-   mltpx: REPL
-   offset: 0
-   swtch: "!L62"
-   flightModes: 000000000
-   curve: 
-      type: 3
-      value: 32
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "Select"
  -
    weight: 100
    destCh: 31
@@ -497,7 +449,7 @@ mixData:
  -
    weight: 100
    destCh: 31
-   srcRaw: MAX
+   srcRaw: I1
    carryTrim: 1
    mixWarn: 0
    mltpx: MUL
@@ -529,7 +481,7 @@ mixData:
    name: "Flip"
 limitData: 
    0:
-      min: 2
+      min: 0
       max: 0
       ppmCenter: 0
       offset: 0
@@ -538,7 +490,7 @@ limitData:
       curve: 0
       name: "DrvL"
    1:
-      min: 3
+      min: 0
       max: 0
       ppmCenter: 0
       offset: 0
@@ -547,15 +499,64 @@ limitData:
       curve: 0
       name: "DrvR"
    2:
-      min: 3
+      min: 0
       max: 0
       ppmCenter: 0
       offset: 0
       symetrical: 0
       revert: 0
-      curve: 0
+      curve: 25
       name: "Weap"
+expoData: 
+ -
+   mode: 3
+   scale: 0
+   trimSource: 1
+   srcRaw: Thr
+   chn: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: "Thrott"
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   trimSource: 1
+   srcRaw: Ail
+   chn: 1
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: "Steer"
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   trimSource: 0
+   srcRaw: P1
+   chn: 2
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: "Weapon"
+   offset: 0
 curves: 
+   24:
+      type: 0
+      smooth: 0
+      points: -2
+      name: "WPS"
+   25:
+      type: 1
+      smooth: 0
+      points: -1
+      name: "WEP"
+   26:
+      type: 1
+      smooth: 0
+      points: -1
+      name: "WSL"
    27:
       type: 1
       smooth: 0
@@ -582,6 +583,32 @@ curves:
       points: 0
       name: "CDZ"
 points: 
+   120:
+      val: -100
+   121:
+      val: -100
+   122:
+      val: 100
+   125:
+      val: 100
+   126:
+      val: 100
+   127:
+      val: -90
+   128:
+      val: 90
+   129:
+      val: 30
+   130:
+      val: 100
+   131:
+      val: 100
+   132:
+      val: 30
+   133:
+      val: -10
+   134:
+      val: 10
    135:
       val: -100
    136:
@@ -590,6 +617,8 @@ points:
       val: 5
    139:
       val: 100
+   140:
+      val: -1
    143:
       val: 100
    146:
@@ -627,16 +656,22 @@ points:
    163:
       val: 100
    164:
-      val: -100
+      val: 100
    168:
       val: 100
    169:
       val: -5
    171:
       val: 5
-logicalSw:
-   56:
+logicalSw: 
+   55:
       func: FUNC_EQUAL
+      def: "NONE,MAX"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   56:
+      func: FUNC_LESS
       def: "SD,MAX"
       andsw: "NONE"
       delay: 0
@@ -647,38 +682,14 @@ logicalSw:
       andsw: "NONE"
       delay: 0
       duration: 0
-   58:
-      func: FUNC_VPOS
-      def: "gv(0),0"
-      andsw: "NONE"
-      delay: 0
-      duration: 0
-   59:
-      func: FUNC_VPOS
-      def: "gv(1),0"
-      andsw: "NONE"
-      delay: 0
-      duration: 0
-   60:
-      func: FUNC_EQUAL
-      def: "NONE,MAX"
-      andsw: "NONE"
-      delay: 0
-      duration: 0
-   61:
-      func: FUNC_EQUAL
-      def: "NONE,MAX"
-      andsw: "NONE"
-      delay: 0
-      duration: 0
 flightModeData: 
    0:
       trim: 
          0:
-            value: 128
+            value: 125
             mode: 0
          2:
-            value: 128
+            value: 125
             mode: 0
       name: ""
       swtch: "NONE"
@@ -712,16 +723,6 @@ rfAlarms:
 thrTrimSw: 0
 potsWarnMode: WARN_OFF
 jitterFilter: GLOBAL
-moduleData: 
-   0:
-      type: TYPE_CROSSFIRE
-      subType: 0
-      channelsStart: 0
-      channelsCount: 16
-      failsafeMode: NOT_SET
-      mod: 
-         crsf: 
-            telemetryBaudrate: 0
 trainerData: 
    mode: OFF
    channelsStart: 0
@@ -729,6 +730,13 @@ trainerData:
    frameLength: 0
    delay: 0
    pulsePol: 0
+inputNames: 
+   0:
+      val: "Thr"
+   1:
+      val: "Str"
+   2:
+      val: "Wep"
 potsWarnEnabled: 0
 view: 0
 modelRegistrationID: ""
@@ -743,5 +751,5 @@ modelCurvesDisabled: GLOBAL
 modelGVDisabled: GLOBAL
 modelLSDisabled: GLOBAL
 modelSFDisabled: GLOBAL
-modelCustomScriptsDisabled: ON
+modelCustomScriptsDisabled: GLOBAL
 modelTelemetryDisabled: GLOBAL
