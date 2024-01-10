@@ -275,7 +275,7 @@ mixData:
  -
    weight: 100
    destCh: 25
-   srcRaw: TrimThr
+   srcRaw: TrimAil
    carryTrim: 1
    mixWarn: 0
    mltpx: REPL
@@ -293,7 +293,7 @@ mixData:
  -
    weight: 100
    destCh: 26
-   srcRaw: TrimEle
+   srcRaw: TrimThr
    carryTrim: 1
    mixWarn: 0
    mltpx: ADD
@@ -311,7 +311,7 @@ mixData:
  -
    weight: 100
    destCh: 27
-   srcRaw: TrimRud
+   srcRaw: TrimEle
    carryTrim: 1
    mixWarn: 0
    mltpx: ADD
@@ -329,7 +329,7 @@ mixData:
  -
    weight: 100
    destCh: 28
-   srcRaw: TrimAil
+   srcRaw: TrimRud
    carryTrim: 1
    mixWarn: 0
    mltpx: ADD
@@ -347,7 +347,7 @@ mixData:
  -
    weight: 100
    destCh: 29
-   srcRaw: TrimAil
+   srcRaw: TrimRud
    carryTrim: 1
    mixWarn: 0
    mltpx: ADD
@@ -684,13 +684,6 @@ logicalSw:
       duration: 0
 flightModeData: 
    0:
-      trim: 
-         0:
-            value: 123
-            mode: 0
-         2:
-            value: 125
-            mode: 0
       name: ""
       swtch: "NONE"
       fadeIn: 0
