@@ -18,6 +18,8 @@ The logical switches should be mapped to either phyiscal switches, or be set to 
 
 To pick a switch position, set the logical switch to use either `a=b` (true if max) or `a<b` (false if max), with the first parameter being the switch source, and the second parameter being `MAX`. Remember to also set the pre-flight check options for the weapon switch.
 
+There is an intentional slow-up enabled for the weapon channel 3, edit the slowness if you don't need it.
+
 The trim switches are used for real-time adjustments:
 
  * TrmT, throttle trim: speed scaling for throttle control input
