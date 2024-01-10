@@ -112,7 +112,7 @@ mixData:
    carryTrim: 1
    mixWarn: 0
    mltpx: REPL
-   offset: -100
+   offset: 0
    swtch: "L57"
    flightModes: 000000000
    delayUp: 0
