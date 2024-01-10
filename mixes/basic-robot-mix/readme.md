@@ -44,5 +44,3 @@ This mix also includes a control channel for a basic combat robot weapon. Channe
 # Notes for MT12
 
 TrmT is T4, TrmE is T3, TrmR is T1, and TrmA is T2
-
-There is not enough physical switches to implement quick motor reverse switches, so I've used global variable G1 and G2 to implement motor reverse. 0 means not reversed, 1 means reversed.
