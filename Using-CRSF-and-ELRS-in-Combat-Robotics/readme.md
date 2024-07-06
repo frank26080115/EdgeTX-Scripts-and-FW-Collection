@@ -8,7 +8,7 @@ Traditional RC PWM signals convey their data with the length of their electrical
  * there's no official way of indicating if a pulse is real or not, noise can be interpreted as a pulse
  * inexpesive timing devices in electronics are affected by temperature, so a hot device measuring a pulse will yield the wrong result
 
-For my fellow combat robot builders, you may have seen these problems occur when a weapon motor twitches unexpectedly when it is supposed to be off, or sometimes it seems like you need to adjust your radio trim after your robot gets hot.
+For my fellow combat robot builders, you may have seen these problems occur when a weapon motor twitches unexpectedly when it is supposed to be off, or sometimes it seems like you need to adjust your radio trim after your robot gets hot, the robot might not arm or might even move without being told to.
 
 ![](imgs/noise-and-pwm.png)
 
