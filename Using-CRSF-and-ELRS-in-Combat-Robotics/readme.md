@@ -58,6 +58,8 @@ Note: this tutorial assumes you have ELRS version 3.4 or later. Please perform a
 
 Any ESC with AM32 firmware will support CRSF, but will require a firmware update. BLHeli32 and BLHeli_S do not support CRSF. BLHeli32 ESCs can be upgraded to AM32.
 
+The currently official versions of AM32 does not have CRSF support, but they can be easily updated with the experimental firmware that does support CRSF.
+
 # Updating AM32
 
 **NOTE** these instructions are written when AM32 firmware version 3 is still in an experimental phase. When it exits the experimental phase, the instructions and URL links might change.
