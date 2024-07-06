@@ -125,6 +125,7 @@ You need to know if your ESC has a telemetry pin. Sometimes there's a pin labell
 ![](imgs/whereistelem/whereistelem3.jpg)
 ![](imgs/whereistelem/whereistelem4.jpg)
 ![](imgs/whereistelem/whereistelem5.jpg)
+![](imgs/whereistelem/whereistelem6.jpg)
 
 The small ELRS receivers have 4 pins, they should be labelled. These pins are generally:
 
@@ -145,6 +146,8 @@ Remember that one CRSF signal can control as many ESCs as you want. It will look
 
 ![](imgs/circuit-example-3.png)
 
-You will need to get a bit creative with the wiring.
+![](imgs/circuit-example-4.png)
+
+You will need to get a bit creative with the wiring. Although it might be tempting to just "jump" two close by pins together, doing so makes it harder to re-configure the ESC in the future. You can try that, but only if you are 100% sure you've finished configuring it.
 
 NOTE: this might sound weird that you are connecting a transmit pin to another transmit pin. The reason is that AM32's firmware converts the telemetry pin into a secondary input instead under this configuration. But! This means for best electrical safety, you need to do the configuration before making the connection, also, it is impossible to get telemetry from the ESC when it is using CRSF.
