@@ -2,9 +2,9 @@
 
 CRSF is a communication protocol designed for remotely controlled racing drones. It is a replacement for the traditional RC PWM pulses.
 
-Traditional RC PWM signals convey their data with the length of their electrical pulses. The problem with:
+Traditional RC PWM signals convey their data with the length of their electrical pulses. The problems with this:
 
- * this is actually considered analog, if a device wants to send a 1.22, the reader might measure a 1.23 instead
+ * this signal is actually considered analog, if a device wants to send a 1.22, the reader might measure a 1.23 instead
  * there's no official way of indicating if a pulse is real or not, noise can be interpreted as a pulse
  * inexpesive timing devices in electronics are affected by temperature, so a hot device measuring a pulse will yield the wrong result
 
