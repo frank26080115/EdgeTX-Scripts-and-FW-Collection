@@ -40,9 +40,9 @@ First start by activating Wi-Fi mode. Assuming you didn't previously disable Wi-
 
 The main page of the ELRS configration webpage is at `http://10.0.0.1/`, but now we need to access the hardware configuration page, which is at `http://10.0.0.1/hardware.html`. On this page. Make three changes:
 
- * Set the CRSF Serial `RX pin` to **blank**
+ * Set the CRSF Serial `RX pin` to `     ` **(blank)**
  * Set the CRSF Serial `TX pin` to `1`
- * Set the `PWM output pins` to `0,1`
+ * Set the `PWM output pins` to `0,3`
 
 ![](imgs/hardware-html.png)
 
