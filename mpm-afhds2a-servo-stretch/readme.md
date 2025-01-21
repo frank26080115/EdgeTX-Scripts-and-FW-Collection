@@ -4,7 +4,7 @@ No need to purchase any additional electronics, this is simply a firmware change
 
 The basic principle is that the transmitter is sending FS2A raw 12 bit numbers to represent the PWM pulse widths in microsecond units. Any number between 0 and 4095 can be sent, and the FS2A does not validate the number before sending the pulses. A normal PWM signal pulse width is usually between 988 microseconds and 2012 microseconds (think of it as 1500 as the center and a range of +/- 512). But since we can send arbitary numbers, we can make the transmitter firmware send numbers lower than 988 and higher than 2012.
 
-The way the firmware works is that, when used normally, nothing is actually different. But if you configure the EdgeTX model configuration to use "extended limits", and then you actually start sending a pulse below 988 us or above 2012 us on a channel, then that particular channel has the "stretch" activated, and will remap the values to a range 500 us to 2500 us.
+The way the firmware works is that, when used normally, nothing is actually different. But if you configure the EdgeTX model configuration to use "extended limits", and then you actually start sending a pulse below 988 us or above 2012 us on a channel (this requires going to the `OUTPUTS` page and setting the limits higher than +/- 512), then that particular channel has the "stretch" activated, and will remap the values to a range 500 us to 2500 us.
 
 This means you need to wiggle your sticks to the limits at least once before stretching is activated, **every time you power on your radio**
 
